@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель управления</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://usipvnxjmvdhagllufqm.supabase.co/storage/v1/object/public/admins_photo/logo_icons_PMH-removebg-preview.png" alt="Логотип" class="sidebar-logo">
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#" class="active"><img src="https://cdn.jsdelivr.net/npm/heroicons@1.0.6/outline/home.svg" alt="" class="icon">Dashboard</a></li>
+                    <li><a href="#"><img src="https://cdn.jsdelivr.net/npm/heroicons@1.0.6/outline/user.svg" alt="" class="icon">Психологи</a></li>
+                    <li><a href="#"><img src="https://cdn.jsdelivr.net/npm/heroicons@1.0.6/outline/calendar.svg" alt="" class="icon">Розклад психологів</a></li>
+                    <li><a href="#"><img src="https://cdn.jsdelivr.net/npm/heroicons@1.0.6/outline/document-text.svg" alt="" class="icon">Записи на консультацію</a></li>
+                    <li><a href="#"><img src="https://cdn.jsdelivr.net/npm/heroicons@1.0.6/outline/chart-bar.svg" alt="" class="icon">Статистика та аналітика</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-left">
+                    <span class="page-title">Dashboard</span>
+                </div>
+                <div class="header-right">
+                    <img src="https://cdn.jsdelivr.net/npm/heroicons@1.0.6/outline/bell.svg" alt="Уведомления" class="icon">
+                    <img src="https://cdn.jsdelivr.net/npm/heroicons@1.0.6/outline/cog.svg" alt="Настройки" class="icon">
+                    <span class="user-name">Мария</span>
+                    <img src="https://usipvnxjmvdhagllufqm.supabase.co/storage/v1/object/public/admins_photo/image-4.jpeg" alt="Фото пользователя" class="user-photo">
+                </div>
+            </header>
+
+            <div class="main-body">
+                <div class="content-area" id="content">
+                    </div>
+                <div class="right-panel" id="right-panel">
+                    <p style="color: var(--light-text-color);">Здесь может отображаться дополнительная информация или виджеты.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
